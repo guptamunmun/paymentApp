@@ -1,0 +1,106 @@
+/* Page container */
+.pay-container {
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #f5f7ff, #e4e8ff);
+}
+
+/* Main card */
+.pay-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 28px;
+  border-radius: 26px;
+  box-shadow: 0px 10px 35px rgba(99, 102, 241, 0.18);
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.pay-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 16px 45px rgba(99, 102, 241, 0.28);
+}
+
+/* Title */
+.pay-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* Label */
+.pay-label {
+  display: block;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+/* Amount Box */
+.amount-box {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  background: #f9f9ff;
+  border: 2px solid #e2e5ff;
+  border-radius: 18px;
+  transition: 0.25s ease;
+}
+
+.amount-box:focus-within {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(99, 102, 241, 0.25);
+}
+
+.currency-icon {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-right: 10px;
+}
+
+/* Input Field */
+.amount-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 28px;
+  font-weight: 600;
+  color: #374151;
+  outline: none;
+}
+
+.amount-input::placeholder {
+  color: #c4c6d6;
+}
+
+/* Pay Button */
+.pay-btn {
+  margin-top: 26px;
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 10px 20px rgba(99, 102, 241, 0.35);
+  transition: 0.25s ease-in-out;
+}
+
+.pay-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 15px 30px rgba(99, 102, 241, 0.5);
+}
+
+.pay-btn:active {
+  transform: scale(0.97);
+}

@@ -1,0 +1,143 @@
+/* -------- PAGE BACKGROUND -------- */
+.receive-page {
+  min-height: 100vh;
+  padding: 24px;
+  background: linear-gradient(
+    to bottom,
+    #e0e7ff,
+    #ffffff,
+    #eef2ff
+  );
+}
+
+.dark .receive-page {
+  background: linear-gradient(
+    to bottom,
+    #0f172a,
+    #1e293b,
+    #0f172a
+  );
+}
+
+/* -------- HEADER -------- */
+.receive-header {
+  text-align: center;
+}
+
+.receive-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #111827;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.dark .receive-title {
+  color: #f1f5f9;
+}
+
+.receive-subtitle {
+  margin-top: 4px;
+  color: #6b7280;
+}
+
+.dark .receive-subtitle {
+  color: #cbd5e1;
+}
+
+/* -------- TRANSACTION CARD -------- */
+.tx-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.dark .tx-card {
+  background: rgba(30, 41, 59, 0.5);
+  border-color: rgba(71, 85, 105, 0.5);
+}
+
+.tx-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* -------- TEXT INSIDE CARD -------- */
+.tx-desc {
+  font-weight: 600;
+  color: #111827;
+  font-size: 1.1rem;
+}
+
+.dark .tx-desc {
+  color: #f1f5f9;
+}
+
+.tx-date {
+  font-size: 0.8rem;
+  margin-top: 4px;
+  color: #6b7280;
+}
+
+.dark .tx-date {
+  color: #cbd5e1;
+}
+
+/* -------- AMOUNT -------- */
+.tx-amount-in {
+  color: #059669;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.tx-amount-out {
+  color: #dc2626;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+/* -------- BADGES -------- */
+.tx-badge {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 9999px;
+}
+
+.tx-in {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.dark .tx-in {
+  background: #064e3b;
+  color: #bbf7d0;
+}
+
+.tx-out {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.dark .tx-out {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+/* -------- ANIMATION -------- */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

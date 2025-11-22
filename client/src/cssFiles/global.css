@@ -1,0 +1,19 @@
+/* Glass button */
+.glass-btn {
+  @apply bg-white/20 text-white font-semibold py-3 text-center rounded-2xl
+         backdrop-blur-md hover:bg-white/30 transition active:scale-95;
+}
+
+/* Quick action cards */
+.quick-card {
+  @apply block bg-white dark:bg-gray-800 rounded-xl p-4 shadow
+         hover:shadow-xl transition;
+}
+
+.quick-sub {
+  @apply text-sm text-gray-500 dark:text-gray-300;
+}
+
+.quick-title {
+  @apply font-semibold mt-1;
+}

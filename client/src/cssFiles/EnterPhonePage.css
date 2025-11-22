@@ -1,0 +1,105 @@
+.enter-container {
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #eef1ff, #dde1ff);
+}
+
+/* Card */
+.enter-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 28px;
+  border-radius: 26px;
+  box-shadow: 0px 10px 35px rgba(99, 102, 241, 0.18);
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
+}
+
+.enter-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 16px 45px rgba(99, 102, 241, 0.28);
+}
+
+/* Title */
+.enter-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  color: #1f2937;
+}
+
+/* small subtitle */
+.enter-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 22px;
+}
+
+/* Phone Input Box */
+.phone-box {
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  background: #f9f9ff;
+  border: 2px solid #e2e5ff;
+  border-radius: 20px;
+  transition: 0.25s ease;
+}
+
+.phone-box:focus-within {
+  border-color: #6366f1;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(99, 102, 241, 0.25);
+}
+
+/* +91 label */
+.phone-prefix {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-right: 12px;
+}
+
+/* Input */
+.phone-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 600;
+  color: #374151;
+  outline: none;
+}
+
+.phone-input::placeholder {
+  color: #c4c6d6;
+}
+
+/* Button */
+.enter-btn {
+  margin-top: 28px;
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #10b981, #059669);
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 10px 25px rgba(16, 185, 129, 0.35);
+  transition: 0.25s ease-in-out;
+}
+
+.enter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 15px 35px rgba(16, 185, 129, 0.45);
+}
+
+.enter-btn:active {
+  transform: scale(0.97);
+}
