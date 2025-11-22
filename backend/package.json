@@ -1,0 +1,21 @@
+{
+  "name": "paymentapp",
+  "version": "1.0.0",
+  "description": "<!-- 1-user login with authentication and authorization \r 2- select a phonenumber or enter a phonenumber\r 3- send payment to given phonenumber -(connect bank account details and transaction from bank to given phonenumer registered user)\r  -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mui/icons-material": "^7.3.5",
+    "@mui/material": "^7.3.5",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.20.0"
+  }
+}
